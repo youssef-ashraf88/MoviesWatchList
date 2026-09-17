@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Src/">
+    <Project Path="MovieWatchList.Core/MovieWatchList.Core.csproj" Id="8b59793b-489d-4e09-92cf-7e6269825173" />
+    <Project Path="MovieWatchList.Infastructure/MovieWatchList.Infastructure.csproj" Id="c42de0be-eae3-461e-aa7f-ea9be3be1da1" />
+    <Project Path="MovieWatchList/MovieWatchList.UI.csproj" />
+  </Folder>
+</Solution>

@@ -1,11 +1,7 @@
-﻿using AutoMapper;
-using FluentValidation;
+﻿using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using MovieWatchList.Data;
 using MovieWatchList.DTO;
-using MovieWatchList.Models;
 using MovieWatchList.ServiceContracts;
 
 namespace MovieWatchList.Controllers
@@ -26,6 +22,7 @@ namespace MovieWatchList.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MovieResponseDTO>>> GetAllMovies()
         {
+            Console.WriteLine("GET ALL - Controller reached");
             var movies = await _movieService.GetAllMovies();
 
             return Ok(movies);
